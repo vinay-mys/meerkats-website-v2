@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meerkats AI — Build, Deploy, and Monetize Autonomous GTM Agents</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 130'%3E%3Cstyle%3E.c%7Bfill:%23ea633c%7D%3C/style%3E%3Cpath class='c' d='M66.27,72.25c1.87-4.73,1.81-9.65.19-13.57-1.29-3.15-3.58-5.63-6.68-6.86-6.96-2.76-15.35,1.9-18.73,10.41-1.22,3.06-1.62,6.2-1.32,9.11.56,5.15,3.35,9.53,7.8,11.31,6.97,2.76,15.35-1.9,18.74-10.4ZM52.84,73.31c-3.29-1.3-5.27-4.46-5.24-7.79.01-.99.2-2.01.59-2.98,1.68-4.25,6.51-6.33,10.76-4.65,1.1.44,2.04,1.08,2.83,1.86,2.25,2.27,3.07,5.74,1.82,8.9-1.69,4.26-6.51,6.35-10.76,4.66Z'/%3E%3Cpath class='c' d='M81.19,102.61h-.02c-10.48,0-19.09-5.11-20.09-11.64-.07.41-.09.82-.09,1.24,0,7.11,9.03,12.89,20.18,12.89h.02c11.15,0,20.18-5.78,20.18-12.89,0-.42-.02-.83-.09-1.24-1,6.53-9.61,11.64-20.09,11.64Z'/%3E%3Cellipse class='c' cx='81.18' cy='88.1' rx='11.18' ry='7.15'/%3E%3Cpath class='c' d='M102.58,51.82c-3.1,1.23-5.39,3.72-6.68,6.86-1.62,3.91-1.69,8.83.19,13.57,3.39,8.5,11.77,13.16,18.74,10.4,4.45-1.78,7.24-6.16,7.8-11.31.31-2.9-.1-6.05-1.32-9.11-3.37-8.51-11.77-13.17-18.73-10.41ZM109.52,73.31c-4.25,1.69-9.07-.39-10.76-4.66-1.25-3.16-.43-6.63,1.82-8.9.79-.78,1.73-1.42,2.83-1.86,4.25-1.69,9.08.39,10.76,4.65.39.98.58,1.99.59,2.98.03,3.33-1.95,6.49-5.24,7.79Z'/%3E%3Cpath class='c' d='M137.19,56.07c.29-3.13.34-6.41-.96-9.27-1.18-2.6-3.53-4.57-6.21-5.5-1.45-.5-2.8-.51-4.31-.56-1.87-.07-1.82-1.39-3.13-2.72-.83-.83-1.93-1.6-3.4-2.31-2.28-1.08-4.69-2.15-7.2-3.12-4.1-1.61-8.9-3.09-14.13-4.47-13.77-4.14-19.56-4.15-33.36,0-5.23,1.38-10.03,2.86-14.13,4.47-2.51.98-4.92,2.04-7.2,3.12-1.47.71-2.56,1.48-3.4,2.31-1.31,1.33-1.26,2.65-3.13,2.72-1.51.06-2.85.06-4.31.56-2.68.93-5.03,2.9-6.21,5.5-1.3,2.86-1.25,6.14-.96,9.27.41,4.46,1.33,8.65,2.4,12.98,1.01,4.1-.79,8.37-.79,12.48,0,2.79.36,5.63,1.23,8.42.85,2.72,2.18,5.27,3.85,7.58.87,1.22,1.84,2.48,2.84,3.61.37.41,1.01-.08.72-.54-2.72-4.54-4.33-9.73-4.61-15.01-.19-3.42-.37-6.54.25-9.99.68-3.68,1.82-7.25,2.99-10.81,1.69-5.12,3.41-10.22,5.17-15.32,1.15-3.3,1.88-8.55,4.99-10.65,6.29-4.3,15.96-3.85,21.49,1.4,2.3,2.19,3.91,5,5.86,7.51,1.96,2.52,4.46,4.84,7.57,5.45.69.14,1.38.19,2.05.15.67.03,1.36-.01,2.05-.15,3.11-.6,5.61-2.93,7.57-5.45,1.95-2.51,3.56-5.32,5.86-7.51,5.53-5.25,15.2-5.7,21.49-1.4,3.1,2.1,3.84,7.35,4.99,10.65,1.76,5.1,3.48,10.2,5.17,15.32,1.17,3.55,2.31,7.12,2.99,10.81.62,3.45.44,6.58.25,9.99-.28,5.28-1.9,10.48-4.61,15.01-.28.46.35.94.72.54,1-1.13,1.97-2.39,2.84-3.61,1.67-2.31,2.99-4.87,3.85-7.58.87-2.78,1.23-5.62,1.23-8.42,0-4.12-1.8-8.38-.79-12.48,1.07-4.33,1.99-8.52,2.4-12.98Z'/%3E%3Ccircle class='c' cx='58.54' cy='69.25' r='2.45'/%3E%3Ccircle class='c' cx='103.81' cy='69.25' r='2.45'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Clay base */
+    --bg: #FAFAF9;
+    --clay-dark: #12121B;
+    --clay-light: #FAFAFA;
+    /* Glass */
+    --glass: rgba(250, 250, 249, 0.65);
+    --glass-solid: rgba(250, 250, 249, 0.85);
+    --glass-border: rgba(18,18,27,0.08);
+    --glass-highlight: linear-gradient(145deg, rgba(255,255,255,0.6), rgba(255,255,255,0.05));
+    --glass-shadow: 0 20px 40px rgba(18,18,27,0.06);
+    --glass-inner: inset 0 1px 0 rgba(255,255,255,0.6);
+    --glass-radius: 24px;
+    /* Accent */
+    --mustard: #E1AD01;
+    --sienna: #A0522D;
+    --neon-orange: #FF5F1F;
+    --neon-dim: rgba(255,95,31,0.08);
+    --neon-glow: rgba(255,95,31,0.04);
+    --mustard-dim: rgba(225,173,1,0.10);
+    --mustard-glow: rgba(225,173,1,0.05);
+    /* Text */
+    --text: #12121B;
+    --text-2: #4A4A56;
+    --text-3: #8A8A96;
+    /* Fonts */
+    --serif: 'Instrument Serif', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+    --radius: 24px;
+    --radius-sm: 14px;
+    /* Motion */
+    --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --duration: 300ms;
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; background: var(--bg); }
+
+  body {
+    font-family: var(--sans);
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Grain overlay */
+  body::before {
+    content: '';
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 9999; opacity: 0.4;
+  }
+
+  /* Ambient orbs */
+  body::after {
+    content: '';
+    position: fixed; top: -200px; right: -100px;
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, var(--mustard-glow), transparent 60%);
+    pointer-events: none; z-index: 0; opacity: 0.7;
+  }
+
+  .ambient-sienna {
+    position: fixed; bottom: -300px; left: -200px;
+    width: 900px; height: 900px;
+    background: radial-gradient(circle, rgba(160,82,45,0.03), transparent 55%);
+    pointer-events: none; z-index: 0;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 12px; left: 50%; transform: translateX(-50%);
+    z-index: 100; width: calc(100% - 2.5rem); max-width: 1120px;
+    padding: 0 1.75rem; height: 56px;
+    display: flex; align-items: center; justify-content: space-between;
+    background: var(--glass);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+    transition: box-shadow var(--duration) var(--ease);
+  }
+
+  .logo {
+    display: flex; align-items: center;
+  }
+
+  .logo svg {
+    height: 28px; width: auto;
+  }
+
+  .nav-links { display: flex; gap: 1.75rem; align-items: center; }
+  .nav-links a {
+    color: var(--text-2); text-decoration: none; font-size: 0.84rem; font-weight: 500;
+    transition: color var(--duration) var(--ease);
+    position: relative;
+  }
+  .nav-links a:hover { color: var(--text); }
+  .nav-links a:hover::after {
+    content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px;
+    background: var(--mustard); border-radius: 1px;
+    box-shadow: 0 0 8px rgba(225,173,1,0.4);
+  }
+
+  /* ─── BUTTONS ─── */
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.45rem;
+    font-family: var(--sans); font-weight: 600; font-size: 0.84rem;
+    text-decoration: none; border: none; cursor: pointer;
+    transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease), opacity var(--duration) var(--ease);
+    border-radius: var(--radius-sm);
+  }
+  .btn:hover { transform: translateY(-2px) scale(1.02); }
+  .btn:active { transform: scale(0.98); }
+
+  .btn-lime {
+    background: var(--neon-orange); color: #fff; padding: 0.6rem 1.3rem;
+    box-shadow: 0 0 16px rgba(255,95,31,0.25);
+    position: relative; overflow: hidden;
+  }
+  .btn-lime::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 50%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2), transparent);
+    pointer-events: none;
+  }
+
+  .btn-lime-lg {
+    background: var(--neon-orange); color: #fff; padding: 0.9rem 2.2rem;
+    font-size: 0.95rem; border-radius: 16px;
+    box-shadow: 0 0 24px rgba(255,95,31,0.35);
+    position: relative; overflow: hidden;
+  }
+  .btn-lime-lg::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 50%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2), transparent);
+    pointer-events: none;
+  }
+
+  .btn-ghost {
+    background: var(--glass); color: var(--text); padding: 0.9rem 2.2rem;
+    font-size: 0.95rem; border: 1px solid var(--glass-border);
+    border-radius: 16px; backdrop-filter: blur(12px);
+    box-shadow: var(--glass-inner);
+  }
+  .btn-ghost:hover { background: rgba(250,250,249,0.8); }
+
+  /* ─── LAYOUT ─── */
+  section { padding: 6.5rem 2.5rem; position: relative; z-index: 1; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+
+  .label {
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.13em;
+    font-weight: 600; color: var(--mustard); margin-bottom: 1.25rem;
+  }
+
+  h1 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(2.8rem, 5.5vw, 4.1rem);
+    line-height: 1.1; letter-spacing: -0.025em; color: var(--text);
+  }
+  h1 em { font-style: italic; color: var(--neon-orange); }
+
+  h2 {
+    font-family: var(--serif); font-weight: 400;
+    font-size: clamp(1.9rem, 3.5vw, 2.65rem);
+    line-height: 1.15; letter-spacing: -0.02em; color: var(--text);
+  }
+  h2 em { font-style: italic; }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding-top: 10rem; padding-bottom: 5rem; text-align: center;
+    position: relative;
+  }
+  .hero::after {
+    content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+    width: 900px; height: 700px;
+    background: radial-gradient(ellipse 50% 45%, var(--mustard-glow), transparent);
+    pointer-events: none; z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
+
+  .pill {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--glass);
+    backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: 100px; padding: 0.4rem 1rem 0.4rem 0.65rem;
+    font-size: 0.78rem; font-weight: 600; color: var(--neon-orange);
+    margin-bottom: 2rem;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+    animation: fadeUp .7s var(--ease) both;
+  }
+  .pill-dot {
+    width: 7px; height: 7px; border-radius: 50%; background: var(--neon-orange);
+    box-shadow: 0 0 8px rgba(255,95,31,0.4);
+    animation: blink 2s ease infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+  .hero h1 { max-width: 800px; margin: 0 auto 1.5rem; animation: fadeUp .7s var(--ease) .08s both; }
+  .hero-sub {
+    font-size: 1.12rem; color: var(--text-2); max-width: 580px;
+    margin: 0 auto 2.5rem; line-height: 1.7; animation: fadeUp .7s var(--ease) .16s both;
+  }
+  .hero-actions { display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap; animation: fadeUp .7s var(--ease) .24s both; }
+
+  .trust {
+    margin-top: 4rem; display: flex; flex-direction: column; align-items: center; gap: 1rem;
+    animation: fadeUp .7s var(--ease) .4s both;
+  }
+  .trust-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-3); font-weight: 500; }
+  .trust-row { display: flex; gap: 2.25rem; align-items: center; flex-wrap: wrap; justify-content: center; }
+  .trust-name { color: var(--text-3); font-weight: 600; font-size: 0.82rem; opacity: 0.5; letter-spacing: 0.02em; }
+
+  /* ─── GLASS CARD (shared) ─── */
+  .glass-card {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius);
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+    transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+  }
+  .glass-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 24px 48px rgba(18,18,27,0.08), var(--glass-inner);
+  }
+
+  /* ─── PRODUCT MOCK ─── */
+  .hero-product { margin-top: 4rem; animation: fadeUp .7s var(--ease) .5s both; }
+  .frame {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius);
+    overflow: hidden; max-width: 980px; margin: 0 auto;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+  }
+  .frame-bar {
+    display: flex; align-items: center; gap: 6px; padding: 0.75rem 1.15rem;
+    background: rgba(250,250,249,0.5);
+    border-bottom: 1px solid var(--glass-border);
+  }
+  .frame-dot { width: 9px; height: 9px; border-radius: 50%; }
+  .d-r { background: #ff5f57; } .d-y { background: #febc2e; } .d-g { background: #28c840; }
+
+  .mock {
+    display: grid; grid-template-columns: 200px 1fr; gap: 1.25rem;
+    padding: 1.5rem; min-height: 320px;
+  }
+  .mock-nav {
+    background: rgba(250,250,249,0.5);
+    background-image: var(--glass-highlight);
+    border: 1px solid var(--glass-border); border-radius: 16px;
+    padding: 1.1rem;
+    box-shadow: var(--glass-inner);
+  }
+  .mock-nav-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-3); font-weight: 600; margin-bottom: 0.85rem; }
+  .mock-item {
+    display: flex; align-items: center; gap: 0.6rem; padding: 0.5rem 0.6rem;
+    border-radius: 10px; font-size: 0.78rem; color: var(--text-2); margin-bottom: 0.2rem;
+    transition: background var(--duration) var(--ease);
+  }
+  .mock-item.on { background: var(--neon-dim); color: var(--neon-orange); }
+  .mock-pip { width: 7px; height: 7px; border-radius: 50%; background: var(--text-3); flex-shrink: 0; }
+  .mock-item.on .mock-pip { background: var(--neon-orange); box-shadow: 0 0 8px rgba(255,95,31,0.3); }
+
+  .mock-body { display: flex; flex-direction: column; gap: 0.85rem; }
+  .mock-card {
+    background: rgba(250,250,249,0.5);
+    background-image: var(--glass-highlight);
+    border: 1px solid var(--glass-border); border-radius: 16px;
+    padding: 1rem 1.1rem;
+    box-shadow: var(--glass-inner);
+  }
+  .mc-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
+  .mc-title { font-size: 0.78rem; font-weight: 600; color: var(--text); }
+  .mc-badge { font-size: 0.62rem; padding: 0.15rem 0.5rem; border-radius: 100px; font-weight: 600; }
+  .mc-badge.green { background: rgba(40,200,64,0.10); color: #1a8a3a; }
+  .mc-badge.amber { background: rgba(225,173,1,0.12); color: #a08200; }
+  .mc-badge.blue { background: rgba(110,174,245,0.12); color: #3a7ac2; }
+  .mc-row {
+    display: flex; justify-content: space-between; font-size: 0.72rem;
+    color: var(--text-3); padding: 0.25rem 0;
+    border-bottom: 1px solid rgba(18,18,27,0.04);
+  }
+  .mc-row:last-child { border: none; }
+  .mc-row span:last-child { color: var(--text-2); }
+
+  /* ─── CONSOLE ─── */
+  .console-section {
+    border-top: 1px solid var(--glass-border);
+    background: rgba(250,250,249,0.4);
+  }
+  .console-header { margin-bottom: 2.5rem; }
+  .console-header h2 { margin-bottom: 0.5rem; }
+  .console-header p { font-size: 0.95rem; color: var(--text-2); }
+
+  .console-box {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    overflow: hidden; max-width: 820px;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+  }
+  .console-input-wrap {
+    display: flex; align-items: flex-start; gap: 0.75rem;
+    padding: 1.25rem; min-height: 110px;
+    border-bottom: 1px solid var(--glass-border);
+  }
+  .console-textarea {
+    flex: 1; background: none; border: none; outline: none; resize: none;
+    font-family: var(--sans); font-size: 0.88rem; line-height: 1.6;
+    color: var(--text); min-height: 70px;
+  }
+  .console-textarea::placeholder { color: var(--text-3); }
+  .console-send {
+    width: 38px; height: 38px; border-radius: 11px;
+    background: var(--neon-orange); border: none; cursor: pointer;
+    display: grid; place-items: center; flex-shrink: 0;
+    box-shadow: 0 0 16px rgba(255,95,31,0.3);
+    transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+    margin-top: 2px;
+    position: relative; overflow: hidden;
+  }
+  .console-send::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 50%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2), transparent);
+    pointer-events: none;
+  }
+  .console-send:hover { transform: scale(1.05); box-shadow: 0 0 24px rgba(255,95,31,0.4); }
+  .console-send svg { width: 16px; height: 16px; }
+
+  .console-prompts {
+    padding: 1rem 1.25rem; display: flex; flex-wrap: wrap; gap: 0.5rem;
+  }
+  .prompt-btn {
+    background: rgba(250,250,249,0.6);
+    border: 1px solid var(--glass-border);
+    border-radius: 100px; padding: 0.5rem 1rem;
+    font-family: var(--sans); font-size: 0.78rem; font-weight: 500;
+    color: var(--text-2); cursor: pointer;
+    backdrop-filter: blur(8px);
+    box-shadow: var(--glass-inner);
+    transition: all var(--duration) var(--ease);
+    white-space: nowrap;
+  }
+  .prompt-btn:hover {
+    background: rgba(250,250,249,0.85); color: var(--text);
+    transform: translateY(-1px);
+  }
+  .prompt-btn.active {
+    background: var(--neon-dim); border-color: rgba(255,95,31,0.2); color: var(--neon-orange);
+  }
+
+  .console-hint {
+    margin-top: 1rem; font-size: 0.75rem; color: var(--text-3);
+    max-width: 820px;
+  }
+
+  /* ─── USE CASES ─── */
+  .use-cases { border-top: 1px solid var(--glass-border); }
+  .use-cases-header { margin-bottom: 2.5rem; }
+  .use-cases-header h2 { margin-bottom: 0.5rem; }
+  .use-cases-header p { font-size: 0.95rem; color: var(--text-2); }
+
+  .uc-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.15rem;
+  }
+  .uc-card {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px; padding: 1.75rem;
+    display: flex; flex-direction: column;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+    transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+  }
+  .uc-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 24px 48px rgba(18,18,27,0.08), var(--glass-inner);
+  }
+  .uc-card h3 {
+    font-family: var(--sans); font-size: 1rem; font-weight: 600;
+    margin-bottom: 0.6rem; line-height: 1.35; color: var(--text);
+  }
+  .uc-card p {
+    font-size: 0.85rem; color: var(--text-3); line-height: 1.65; flex: 1;
+    margin-bottom: 1.25rem;
+  }
+  .uc-explore {
+    display: inline-flex; align-items: center; gap: 0.35rem;
+    font-size: 0.8rem; font-weight: 600; color: var(--neon-orange);
+    text-decoration: none;
+    transition: gap var(--duration) var(--ease);
+    align-self: flex-start;
+  }
+  .uc-explore:hover { gap: 0.55rem; }
+
+  @media (max-width: 700px) {
+    .uc-grid { grid-template-columns: 1fr; }
+    .console-prompts { flex-direction: column; }
+    .prompt-btn { white-space: normal; }
+  }
+
+  /* ─── PROBLEM ─── */
+  .problem { border-top: 1px solid var(--glass-border); }
+  .problem h2 { margin-bottom: 1.5rem; }
+  .problem-copy { font-size: 1.02rem; color: var(--text-2); line-height: 1.75; max-width: 660px; }
+  .problem-copy p { margin-bottom: 1.15rem; }
+
+  .pain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 3rem; }
+  .pain {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px; padding: 1.5rem;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+    transition: transform var(--duration) var(--ease);
+  }
+  .pain:hover { transform: translateY(-2px); }
+  .pain-icon {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: var(--mustard-dim);
+    display: grid; place-items: center; font-size: 0.95rem; margin-bottom: 0.9rem;
+  }
+  .pain h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text); }
+  .pain p { font-size: 0.82rem; color: var(--text-3); line-height: 1.6; }
+
+  /* ─── SOLUTION BRIDGE ─── */
+  .bridge {
+    text-align: center;
+    background: rgba(250,250,249,0.4);
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+  }
+  .bridge h2 { max-width: 660px; margin: 0 auto 1.15rem; }
+  .bridge p { font-size: 1.02rem; color: var(--text-2); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+
+  /* ─── VALUE PROPS ─── */
+  .vps { border-bottom: 1px solid var(--glass-border); }
+  .vp {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+    padding: 4.5rem 0; border-bottom: 1px solid var(--glass-border);
+  }
+  .vp:last-child { border: none; }
+  .vp:nth-child(even) .vp-vis { order: -1; }
+
+  .vp-copy .label { margin-bottom: 0.6rem; }
+  .vp-copy h3 {
+    font-family: var(--serif); font-weight: 400; font-size: 1.65rem;
+    line-height: 1.2; letter-spacing: -0.015em; margin-bottom: 0.9rem; color: var(--text);
+  }
+  .vp-copy p { font-size: 0.92rem; color: var(--text-2); line-height: 1.7; }
+
+  .vp-vis {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--glass-radius); padding: 1.5rem; min-height: 250px;
+    display: flex; flex-direction: column; justify-content: center; gap: 0.55rem;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+  }
+  .vis-row {
+    background: rgba(250,250,249,0.5);
+    background-image: var(--glass-highlight);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px; padding: 0.8rem 1rem;
+    display: flex; align-items: center; gap: 0.7rem; font-size: 0.8rem;
+    box-shadow: var(--glass-inner);
+    transition: transform var(--duration) var(--ease);
+  }
+  .vis-row:hover { transform: translateY(-1px); }
+  .vis-icon {
+    width: 28px; height: 28px; border-radius: 8px;
+    background: var(--mustard-dim);
+    display: grid; place-items: center; font-size: 0.75rem; flex-shrink: 0;
+  }
+  .vis-label { color: var(--text); font-weight: 500; }
+  .vis-meta { margin-left: auto; font-size: 0.68rem; color: var(--text-3); font-weight: 500; }
+  .vis-arrow { text-align: center; font-size: 0.65rem; color: var(--text-3); padding: 0.1rem 0; letter-spacing: 0.05em; }
+
+  /* ─── PERSONAS ─── */
+  .personas {
+    background: rgba(250,250,249,0.4);
+    border-bottom: 1px solid var(--glass-border);
+  }
+  .personas-head { text-align: center; margin-bottom: 3rem; }
+  .personas-head p { font-size: 1.02rem; color: var(--text-2); max-width: 540px; margin: 0 auto; line-height: 1.7; }
+
+  .p-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.15rem; }
+  .p-card {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: 22px; padding: 1.85rem 1.6rem;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+    transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+  }
+  .p-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 24px 48px rgba(18,18,27,0.08), var(--glass-inner);
+  }
+  .p-tag {
+    display: inline-block; font-size: 0.67rem; text-transform: uppercase;
+    letter-spacing: 0.1em; color: var(--neon-orange);
+    background: var(--neon-dim);
+    padding: 0.25rem 0.6rem; border-radius: 6px; font-weight: 600; margin-bottom: 0.9rem;
+  }
+  .p-card h3 { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; margin-bottom: 0.65rem; line-height: 1.3; color: var(--text); }
+  .p-card p { font-size: 0.84rem; color: var(--text-3); line-height: 1.65; }
+
+  /* ─── HOW IT WORKS ─── */
+  .how { border-bottom: 1px solid var(--glass-border); }
+  .steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.25rem; margin-top: 3rem; }
+  .step { position: relative; }
+  .step-n {
+    font-family: var(--serif); font-size: 2.2rem; font-weight: 400;
+    color: var(--mustard); opacity: 0.3; line-height: 1; margin-bottom: 0.85rem;
+  }
+  .step h3 { font-size: 0.88rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--text); }
+  .step p { font-size: 0.78rem; color: var(--text-3); line-height: 1.6; }
+  .step-arr {
+    position: absolute; top: 1.25rem; right: -0.6rem;
+    color: var(--text-3); font-size: 0.7rem; opacity: 0.25;
+  }
+  .step:last-child .step-arr { display: none; }
+
+  /* ─── FINAL CTA ─── */
+  .cta-end { text-align: center; padding: 8rem 2.5rem; position: relative; }
+  .cta-end::after {
+    content: ''; position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%);
+    width: 700px; height: 500px;
+    background: radial-gradient(ellipse 50% 50%, var(--neon-glow), transparent);
+    pointer-events: none;
+  }
+  .cta-end > * { position: relative; z-index: 1; }
+  .cta-end h2 { max-width: 560px; margin: 0 auto 0.85rem; }
+  .cta-end p { font-size: 1.02rem; color: var(--text-2); max-width: 460px; margin: 0 auto 2.25rem; line-height: 1.7; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    border-top: 1px solid var(--glass-border);
+    padding: 2.5rem; text-align: center;
+    background: rgba(250,250,249,0.3);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+  }
+  footer p { font-size: 0.78rem; color: var(--text-3); }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Scroll-reveal system */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.vis { opacity: 1; transform: translateY(0); }
+  .reveal-left {
+    opacity: 0; transform: translateX(-32px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal-left.vis { opacity: 1; transform: translateX(0); }
+  .reveal-right {
+    opacity: 0; transform: translateX(32px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal-right.vis { opacity: 1; transform: translateX(0); }
+  .reveal-scale {
+    opacity: 0; transform: scale(0.92);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal-scale.vis { opacity: 1; transform: scale(1); }
+
+  /* Stagger children */
+  .stagger > *:nth-child(1) { transition-delay: 0s; }
+  .stagger > *:nth-child(2) { transition-delay: 0.08s; }
+  .stagger > *:nth-child(3) { transition-delay: 0.16s; }
+  .stagger > *:nth-child(4) { transition-delay: 0.24s; }
+  .stagger > *:nth-child(5) { transition-delay: 0.32s; }
+
+  /* Live pulse for active elements */
+  @keyframes softPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,95,31,0.15); }
+    50% { box-shadow: 0 0 20px 4px rgba(255,95,31,0.12); }
+  }
+  @keyframes dotFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+  }
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  @keyframes flowPulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; color: var(--neon-orange); }
+  }
+  @keyframes borderGlow {
+    0%, 100% { border-color: var(--glass-border); }
+    50% { border-color: rgba(255,95,31,0.2); }
+  }
+
+  /* Hoverable glass lift */
+  .glass-lift {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.4s ease;
+  }
+  .glass-lift:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 28px 56px rgba(18,18,27,0.10), var(--glass-inner);
+    border-color: rgba(255,95,31,0.15);
+  }
+
+  /* Shimmer border on hover */
+  .shimmer-hover { position: relative; overflow: hidden; }
+  .shimmer-hover::after {
+    content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: none; pointer-events: none;
+  }
+  .shimmer-hover:hover::after {
+    animation: shimmer 0.8s ease forwards;
+  }
+
+  /* Live coordination arrows */
+  .coord-arrow.live span:first-child {
+    animation: flowPulse 2s ease infinite;
+  }
+  .coord-arrow.live:nth-child(2) span:first-child { animation-delay: 0s; }
+  .coord-arrow.live:nth-child(4) span:first-child { animation-delay: 0.5s; }
+  .coord-arrow.live:nth-child(6) span:first-child { animation-delay: 1s; }
+
+  /* Skills.md live cursor blink */
+  .skills-md-name::after {
+    content: '|'; animation: blink 1s step-end infinite; margin-left: 2px; color: var(--neon-orange);
+  }
+
+  /* Live vis-row pulse on the active one */
+  .vis-row.live {
+    animation: borderGlow 3s ease infinite;
+  }
+
+  /* Spawn card float */
+  .spawn-card:nth-child(1) { animation: dotFloat 4s ease infinite; }
+  .spawn-card:nth-child(2) { animation: dotFloat 4s ease infinite 0.5s; }
+  .spawn-card:nth-child(3) { animation: dotFloat 4s ease infinite 1s; }
+
+  /* Progression dots pulse */
+  .prog-dot {
+    animation: softPulse 3s ease infinite;
+  }
+  .prog-step:nth-child(1) .prog-dot { animation-delay: 0s; }
+  .prog-step:nth-child(3) .prog-dot { animation-delay: 0.4s; }
+  .prog-step:nth-child(5) .prog-dot { animation-delay: 0.8s; }
+  .prog-step:nth-child(7) .prog-dot { animation-delay: 1.2s; }
+
+  /* Step numbers hover glow */
+  .step:hover .step-n { color: var(--neon-orange); opacity: 0.6; transition: all 0.3s ease; }
+
+  /* FAQ open animation polish */
+  .faq-a { transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+  .faq-item.open .faq-q { color: var(--neon-orange); }
+
+  /* Pain card icon bounce on hover */
+  .pain:hover .pain-icon { transform: scale(1.12); transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+  /* Persona card tag shimmer */
+  .p-card:hover .p-tag {
+    background: rgba(255,95,31,0.15);
+    box-shadow: 0 0 12px rgba(255,95,31,0.1);
+    transition: all 0.3s ease;
+  }
+
+  /* CTA glow intensify */
+  .cta-end:hover .btn-lime-lg {
+    box-shadow: 0 0 36px rgba(255,95,31,0.45);
+  }
+
+  /* Sand grain textured gradient backgrounds */
+  .sand-texture,
+  .sand-warm {
+    position: relative;
+    overflow: hidden;
+  }
+  .sand-texture > *,
+  .sand-warm > * { position: relative; z-index: 1; }
+
+  .sand-texture::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='6' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)' opacity='0.08'/%3E%3C/svg%3E"),
+      linear-gradient(180deg,
+        rgba(225,173,1,0.06) 0%,
+        rgba(160,82,45,0.05) 35%,
+        rgba(255,95,31,0.04) 65%,
+        rgba(225,173,1,0.03) 100%
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Warm sand variant — deeper sienna tones */
+  .sand-warm::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23w)' opacity='0.09'/%3E%3C/svg%3E"),
+      linear-gradient(160deg,
+        rgba(160,82,45,0.07) 0%,
+        rgba(225,173,1,0.05) 40%,
+        rgba(255,95,31,0.04) 70%,
+        rgba(160,82,45,0.03) 100%
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    .vp { grid-template-columns: 1fr; gap: 2rem; }
+    .vp:nth-child(even) .vp-vis { order: 0; }
+    .p-grid, .pain-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: repeat(2, 1fr); }
+    .step-arr { display: none !important; }
+    .mock { grid-template-columns: 1fr; }
+    .mock-nav { display: none; }
+    nav { left: 0; transform: none; width: 100%; border-radius: 0; top: 0; padding: 0 1.5rem; }
+    .nav-links a:not(.btn-lime) { display: none; }
+    section { padding: 4rem 1.5rem; }
+  }
+  @media (max-width: 600px) {
+    .steps { grid-template-columns: 1fr; }
+    .hero-actions { flex-direction: column; align-items: center; }
+  }
+
+  /* ─── SKILLS SECTION ─── */
+  .skills-section {
+    border-top: 1px solid var(--glass-border);
+    background: rgba(250,250,249,0.4);
+    overflow: hidden;
+  }
+  .skills-header { text-align: center; margin-bottom: 3.5rem; }
+  .skills-header h2 { max-width: 700px; margin: 0 auto 0.85rem; }
+  .skills-header h2 em { color: var(--neon-orange); }
+  .skills-header p { font-size: 1.02rem; color: var(--text-2); max-width: 560px; margin: 0 auto; line-height: 1.7; }
+
+  /* Skills.md panel */
+  .skills-md {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    overflow: hidden; max-width: 580px; margin: 0 auto 3rem;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+  }
+  .skills-md-bar {
+    display: flex; align-items: center; gap: 6px; padding: 0.65rem 1rem;
+    background: rgba(250,250,249,0.5);
+    border-bottom: 1px solid var(--glass-border);
+  }
+  .skills-md-bar .frame-dot { width: 8px; height: 8px; }
+  .skills-md-name {
+    margin-left: 0.5rem; font-size: 0.72rem; font-weight: 600; color: var(--text-3);
+    font-family: 'DM Sans', monospace; letter-spacing: 0.02em;
+  }
+  .skills-md-body { padding: 1.25rem 1.5rem; }
+  .skills-md-body h4 {
+    font-family: var(--sans); font-size: 0.82rem; font-weight: 700; color: var(--text);
+    margin-bottom: 0.6rem; margin-top: 0.9rem;
+  }
+  .skills-md-body h4:first-child { margin-top: 0; }
+  .skills-md-body .md-title {
+    font-family: var(--serif); font-size: 1.1rem; font-weight: 400; color: var(--text);
+    margin-bottom: 0.25rem;
+  }
+  .md-list {
+    list-style: none; display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.2rem;
+  }
+  .md-list li {
+    font-size: 0.72rem; font-weight: 500; color: var(--neon-orange);
+    background: var(--neon-dim); padding: 0.2rem 0.6rem; border-radius: 6px;
+    font-family: 'DM Sans', monospace;
+  }
+  .md-list.tools li { color: var(--mustard); background: var(--mustard-dim); }
+  .md-rule {
+    font-size: 0.72rem; color: var(--text-3); line-height: 1.55;
+    padding-left: 0.85rem; border-left: 2px solid var(--glass-border);
+    margin-top: 0.35rem;
+  }
+
+  /* Arrow connector */
+  .skills-arrow {
+    text-align: center; padding: 0.5rem 0; font-size: 1.1rem; color: var(--text-3); opacity: 0.4;
+    letter-spacing: 0.1em;
+  }
+
+  /* Agent spawn layer */
+  .spawn-layer { max-width: 720px; margin: 0 auto 2.5rem; }
+  .spawn-label {
+    text-align: center; font-size: 0.68rem; text-transform: uppercase;
+    letter-spacing: 0.12em; font-weight: 600; color: var(--mustard);
+    margin-bottom: 1rem;
+  }
+  .spawn-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.85rem;
+  }
+  .spawn-card {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px; padding: 1.15rem 1rem;
+    text-align: center;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+    transition: transform var(--duration) var(--ease);
+  }
+  .spawn-card:hover { transform: translateY(-2px); }
+  .spawn-icon {
+    width: 32px; height: 32px; border-radius: 10px;
+    background: var(--neon-dim); display: grid; place-items: center;
+    font-size: 0.85rem; margin: 0 auto 0.6rem;
+  }
+  .spawn-card h4 { font-size: 0.8rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; }
+  .spawn-card p { font-size: 0.7rem; color: var(--text-3); }
+
+  /* Coordination layer */
+  .coord-layer { max-width: 680px; margin: 0 auto 3.5rem; }
+  .coord-label {
+    text-align: center; font-size: 0.68rem; text-transform: uppercase;
+    letter-spacing: 0.12em; font-weight: 600; color: var(--mustard);
+    margin-bottom: 1rem;
+  }
+  .coord-flow {
+    display: flex; align-items: center; justify-content: center; gap: 0;
+    flex-wrap: wrap;
+  }
+  .coord-node {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px; padding: 0.75rem 1rem;
+    text-align: center; min-width: 120px;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+  }
+  .coord-node h4 { font-size: 0.72rem; font-weight: 600; color: var(--text); }
+  .coord-arrow {
+    display: flex; flex-direction: column; align-items: center; gap: 0.1rem;
+    padding: 0 0.35rem;
+  }
+  .coord-arrow span:first-child { font-size: 0.85rem; color: var(--neon-orange); }
+  .coord-arrow span:last-child {
+    font-size: 0.58rem; color: var(--text-3); font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* Skills content blocks */
+  .skills-blocks {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.15rem;
+    max-width: 900px; margin: 0 auto 3rem;
+  }
+  .sk-block {
+    background: var(--glass);
+    background-image: var(--glass-highlight);
+    backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px; padding: 1.6rem;
+    box-shadow: var(--glass-shadow), var(--glass-inner);
+    transition: transform var(--duration) var(--ease);
+  }
+  .sk-block:hover { transform: translateY(-2px); }
+  .sk-num {
+    font-family: var(--serif); font-size: 1.6rem; color: var(--mustard);
+    opacity: 0.3; line-height: 1; margin-bottom: 0.65rem;
+  }
+  .sk-block h3 { font-size: 0.92rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem; }
+  .sk-block p { font-size: 0.82rem; color: var(--text-3); line-height: 1.65; }
+
+  /* Progression bar */
+  .skills-progression {
+    max-width: 600px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .prog-step {
+    text-align: center; flex: 1;
+    padding: 0.6rem 0.5rem;
+    position: relative;
+  }
+  .prog-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--neon-orange); margin: 0 auto 0.5rem;
+    box-shadow: 0 0 10px rgba(255,95,31,0.3);
+  }
+  .prog-step span {
+    font-size: 0.68rem; font-weight: 600; color: var(--text-2);
+    display: block;
+  }
+  .prog-line {
+    width: 100%; height: 2px; background: var(--glass-border);
+    position: relative; flex: 0.6;
+  }
+  .prog-line::after {
+    content: '→'; position: absolute; top: -8px; right: -4px;
+    font-size: 0.7rem; color: var(--text-3);
+  }
+
+  @media (max-width: 700px) {
+    .spawn-grid { grid-template-columns: 1fr; }
+    .coord-flow { flex-direction: column; gap: 0.5rem; }
+    .coord-arrow { transform: rotate(90deg); padding: 0.2rem 0; }
+    .skills-blocks { grid-template-columns: 1fr; }
+    .skills-progression { flex-direction: column; gap: 0.5rem; }
+    .prog-line { width: 2px; height: 20px; }
+    .prog-line::after { top: auto; bottom: -6px; right: -4px; transform: rotate(90deg); }
+  }
+
+  /* ─── FAQ ─── */
+  .faq { border-top: 1px solid var(--glass-border); }
+  .faq-header { text-align: center; margin-bottom: 3rem; }
+  .faq-header h2 { margin-bottom: 0.5rem; }
+  .faq-list { max-width: 720px; margin: 0 auto; }
+  .faq-item {
+    border-bottom: 1px solid var(--glass-border);
+  }
+  .faq-item:first-child { border-top: 1px solid var(--glass-border); }
+  .faq-q {
+    width: 100%; background: none; border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.25rem 0; gap: 1rem;
+    font-family: var(--sans); font-size: 0.92rem; font-weight: 600;
+    color: var(--text); text-align: left; line-height: 1.4;
+    transition: color var(--duration) var(--ease);
+  }
+  .faq-q:hover { color: var(--neon-orange); }
+  .faq-icon {
+    width: 24px; height: 24px; border-radius: 8px;
+    background: var(--neon-dim); display: grid; place-items: center;
+    flex-shrink: 0; font-size: 0.85rem; color: var(--neon-orange);
+    transition: transform var(--duration) var(--ease);
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.35s var(--ease), padding 0.35s var(--ease);
+  }
+  .faq-item.open .faq-a { max-height: 200px; }
+  .faq-a p {
+    font-size: 0.85rem; color: var(--text-2); line-height: 1.7;
+    padding-bottom: 1.25rem;
+  }
+</style>
+</head>
+<body>
+<div class="ambient-sienna"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo"><svg viewBox="0 0 530.69 130.1" xmlns="http://www.w3.org/2000/svg"><defs><style>.lc{fill:#ea633c}</style></defs><path class="lc" d="M155.84,88.89v-34.75h6.4l.4,4.09c.79-1.14,1.68-2.03,2.67-2.67.99-.64,2.05-1.11,3.2-1.42,1.14-.31,2.31-.46,3.49-.46,2.33,0,4.25.48,5.77,1.45s2.69,2.29,3.53,3.96c.83-1.19,1.78-2.19,2.83-3,1.06-.81,2.22-1.42,3.49-1.81s2.64-.59,4.09-.59c2.59,0,4.69.56,6.3,1.68,1.6,1.12,2.77,2.63,3.49,4.52.73,1.89,1.09,4.07,1.09,6.53v22.48h-6.86v-19.78c0-1.05-.04-2.11-.13-3.17-.09-1.05-.34-2.05-.76-3-.42-.94-1.01-1.71-1.78-2.31s-1.86-.89-3.26-.89-2.5.31-3.4.92c-.9.62-1.63,1.44-2.18,2.47s-.95,2.14-1.19,3.33c-.24,1.19-.36,2.37-.36,3.56v18.86h-6.86v-19.85c0-1.01-.04-2.04-.13-3.1-.09-1.05-.31-2.05-.66-3-.35-.94-.93-1.71-1.75-2.31-.81-.59-1.9-.89-3.26-.89-1.98,0-3.51.56-4.58,1.68-1.08,1.12-1.81,2.48-2.21,4.09-.4,1.61-.59,3.13-.59,4.58v18.79h-6.79Z"/><path class="lc" d="M225.86,89.28c-3.65,0-6.7-.75-9.16-2.24-2.46-1.49-4.32-3.57-5.57-6.23-1.25-2.66-1.88-5.73-1.88-9.2s.65-6.62,1.94-9.3c1.3-2.68,3.19-4.79,5.67-6.33,2.48-1.54,5.48-2.31,9-2.31,2.68,0,5.01.49,6.99,1.48,1.98.99,3.61,2.32,4.91,3.99,1.3,1.67,2.25,3.53,2.87,5.57.61,2.04.88,4.16.79,6.36,0,.48-.02.95-.07,1.38-.04.44-.09.9-.13,1.38h-25.12c.13,1.76.58,3.36,1.35,4.81.77,1.45,1.86,2.6,3.26,3.46,1.41.86,3.14,1.29,5.21,1.29,1.14,0,2.25-.14,3.33-.43,1.08-.28,2.04-.75,2.9-1.38.86-.64,1.46-1.46,1.81-2.47h6.86c-.57,2.33-1.59,4.25-3.07,5.77s-3.25,2.63-5.34,3.33c-2.09.7-4.28,1.05-6.56,1.05ZM216.23,68.45h18.46c-.04-1.72-.44-3.24-1.19-4.58-.75-1.34-1.78-2.4-3.1-3.17-1.32-.77-2.9-1.15-4.75-1.15-2.02,0-3.7.42-5.05,1.25-1.34.84-2.37,1.92-3.1,3.26-.73,1.34-1.15,2.8-1.29,4.38Z"/><path class="lc" d="M263.71,89.28c-3.65,0-6.7-.75-9.16-2.24-2.46-1.49-4.32-3.57-5.57-6.23-1.25-2.66-1.88-5.73-1.88-9.2s.65-6.62,1.94-9.3c1.3-2.68,3.19-4.79,5.67-6.33,2.48-1.54,5.48-2.31,9-2.31,2.68,0,5.01.49,6.99,1.48,1.98.99,3.61,2.32,4.91,3.99,1.3,1.67,2.25,3.53,2.87,5.57.61,2.04.88,4.16.79,6.36,0,.48-.02.95-.07,1.38-.04.44-.09.9-.13,1.38h-25.12c.13,1.76.58,3.36,1.35,4.81.77,1.45,1.86,2.6,3.26,3.46,1.41.86,3.14,1.29,5.21,1.29,1.14,0,2.25-.14,3.33-.43,1.08-.28,2.04-.75,2.9-1.38.86-.64,1.46-1.46,1.81-2.47h6.86c-.57,2.33-1.59,4.25-3.07,5.77s-3.25,2.63-5.34,3.33c-2.09.7-4.28,1.05-6.56,1.05ZM254.08,68.45h18.46c-.04-1.72-.44-3.24-1.19-4.58-.75-1.34-1.78-2.4-3.1-3.17-1.32-.77-2.9-1.15-4.75-1.15-2.02,0-3.7.42-5.05,1.25-1.34.84-2.37,1.92-3.1,3.26-.73,1.34-1.15,2.8-1.29,4.38Z"/><path class="lc" d="M286.26,88.89v-34.75h6.4l.33,5.01c.88-1.36,1.89-2.44,3.03-3.23,1.14-.79,2.4-1.36,3.76-1.71,1.36-.35,2.79-.53,4.29-.53h1.12c.35,0,.68,0,.99,0,.28.98,0,2.43,0,3.44,0,2.01-.04,4-.13,6-2.38-.76-4.91-1.52-7.34-.95-1.72.4-3.28,1.48-4.26,2.95-1.46,2.19-1.21,4.96-1.27,7.47-.06,2.39-.1,4.77-.12,7.16,0,.56-.09,9.14,0,9.14h-6.79Z"/><path class="lc" d="M311.31,88.89v-44.84h6.79v24.53h3.45c1.35,0,2.61-.67,3.36-1.79l8.55-12.65h7.65l-9.83,14.26c-.95,1.38-.96,3.2-.01,4.59l10.83,15.9h-7.98l-8.68-12.56c-.76-1.1-2.01-1.75-3.34-1.75h-4v14.31h-6.79Z"/><path class="lc" d="M357.53,89.28c-1.58,0-3.11-.21-4.58-.63s-2.78-1.05-3.92-1.91c-1.14-.86-2.06-1.93-2.74-3.23-.68-1.3-1.02-2.82-1.02-4.58,0-2.11.41-3.86,1.22-5.24.81-1.38,1.9-2.46,3.26-3.23,1.36-.77,2.93-1.32,4.71-1.65,1.78-.33,3.64-.49,5.57-.49h8.51c0-1.71-.26-3.22-.79-4.52-.53-1.3-1.35-2.31-2.47-3.03-1.12-.73-2.6-1.09-4.45-1.09-1.1,0-2.14.12-3.13.36-.99.24-1.84.63-2.54,1.15-.7.53-1.19,1.23-1.45,2.11h-7.12c.26-1.67.86-3.11,1.78-4.32.92-1.21,2.07-2.21,3.43-3,1.36-.79,2.82-1.37,4.38-1.75,1.56-.37,3.15-.56,4.78-.56,5.01,0,8.63,1.46,10.85,4.38,2.22,2.92,3.33,6.93,3.33,12.03v18.79h-5.87l-.26-4.42c-1.01,1.36-2.21,2.4-3.59,3.1s-2.76,1.17-4.12,1.38c-1.36.22-2.62.33-3.76.33ZM358.59,83.54c1.98,0,3.71-.34,5.21-1.02,1.49-.68,2.66-1.67,3.49-2.97.83-1.3,1.25-2.82,1.25-4.58v-1.45h-6.2c-1.28,0-2.52.03-3.73.1-1.21.07-2.31.24-3.3.53s-1.78.76-2.37,1.42c-.59.66-.89,1.6-.89,2.84s.31,2.15.92,2.9,1.43,1.31,2.44,1.68c1.01.37,2.07.56,3.16.56Z"/><path class="lc" d="M396.76,89.28c-3.74,0-6.41-1.02-8.01-3.07-1.6-2.04-2.41-4.91-2.41-8.6v-17.41h-5.54v-6.07h5.54v-10.09h6.79v10.09h10.62v6.07h-10.62v16.29c0,1.23.12,2.35.36,3.36.24,1.01.71,1.8,1.42,2.37.7.57,1.71.88,3.03.92,1.01,0,1.9-.18,2.67-.53.77-.35,1.39-.75,1.88-1.19l2.64,5.08c-.84.66-1.7,1.2-2.6,1.61-.9.42-1.84.71-2.8.89-.97.18-1.96.26-2.97.26Z"/><path class="lc" d="M423.01,89.28c-1.63,0-3.25-.15-4.88-.46-1.63-.31-3.14-.86-4.55-1.65-1.41-.79-2.59-1.86-3.56-3.2-.97-1.34-1.58-3-1.85-4.98h6.92c.35,1.06.98,1.91,1.88,2.57.9.66,1.91,1.14,3.03,1.45,1.12.31,2.23.46,3.33.46.66,0,1.39-.04,2.21-.13.81-.09,1.59-.29,2.34-.59.75-.31,1.36-.76,1.85-1.35.48-.59.73-1.39.73-2.41,0-.79-.21-1.45-.63-1.98-.42-.53-.99-.96-1.72-1.29-.73-.33-1.59-.58-2.6-.76-1.98-.44-4.1-.87-6.36-1.29-2.26-.42-4.25-1.15-5.97-2.21-.62-.4-1.17-.85-1.65-1.35-.49-.5-.9-1.09-1.25-1.75-.35-.66-.62-1.36-.79-2.11-.18-.75-.26-1.56-.26-2.44,0-1.8.36-3.34,1.09-4.62.73-1.27,1.73-2.32,3-3.13,1.27-.81,2.72-1.42,4.35-1.81,1.63-.4,3.34-.59,5.14-.59,2.33,0,4.44.37,6.33,1.12,1.89.75,3.45,1.85,4.68,3.3,1.23,1.45,1.96,3.27,2.18,5.47h-6.4c-.26-1.19-1.02-2.14-2.27-2.87-1.25-.73-2.83-1.09-4.71-1.09-.66,0-1.38.04-2.14.13-.77.09-1.51.29-2.21.59s-1.27.74-1.71,1.29c-.44.55-.66,1.26-.66,2.14s.21,1.54.63,2.11c.42.57,1.03,1.03,1.85,1.38.81.35,1.75.64,2.8.86,1.49.35,3.11.68,4.85.99,1.74.31,3.15.64,4.25.99,1.45.4,2.69.97,3.73,1.71,1.03.75,1.82,1.69,2.37,2.84.55,1.14.82,2.53.82,4.15,0,2.11-.42,3.83-1.25,5.18-.84,1.34-1.95,2.41-3.33,3.2-1.38.79-2.92,1.34-4.62,1.65-1.69.31-3.35.46-4.98.46Z"/><path class="lc" d="M448.18,88.29c-.96,0-1.75-.3-2.37-.91-.62-.61-.93-1.41-.93-2.4s.32-1.8.96-2.42c.64-.62,1.42-.93,2.35-.93s1.7.31,2.32.93.94,1.43.94,2.42-.31,1.79-.94,2.4c-.62.61-1.4.91-2.32.91Z"/><path class="lc" d="M472.06,89.28c-1.58,0-3.11-.21-4.58-.63s-2.78-1.05-3.92-1.91c-1.14-.86-2.06-1.93-2.74-3.23-.68-1.3-1.02-2.82-1.02-4.58,0-2.11.41-3.86,1.22-5.24.81-1.38,1.9-2.46,3.26-3.23,1.36-.77,2.93-1.32,4.71-1.65,1.78-.33,3.64-.49,5.57-.49h8.51c0-1.71-.26-3.22-.79-4.52-.53-1.3-1.35-2.31-2.47-3.03-1.12-.73-2.6-1.09-4.45-1.09-1.1,0-2.14.12-3.13.36-.99.24-1.84.63-2.54,1.15-.7.53-1.19,1.23-1.45,2.11h-7.12c.26-1.67.86-3.11,1.78-4.32.92-1.21,2.07-2.21,3.43-3,1.36-.79,2.82-1.37,4.38-1.75,1.56-.37,3.15-.56,4.78-.56,5.01,0,8.63,1.46,10.85,4.38,2.22,2.92,3.33,6.93,3.33,12.03v18.79h-5.87l-.26-4.42c-1.01,1.36-2.21,2.4-3.59,3.1s-2.76,1.17-4.12,1.38c-1.36.22-2.62.33-3.76.33ZM473.12,83.54c1.98,0,3.71-.34,5.21-1.02,1.49-.68,2.66-1.67,3.49-2.97.83-1.3,1.25-2.82,1.25-4.58v-1.45h-6.2c-1.28,0-2.52.03-3.73.1-1.21.07-2.31.24-3.3.53s-1.78.76-2.37,1.42c-.59.66-.89,1.6-.89,2.84s.31,2.15.92,2.9c.62.75,1.43,1.31,2.44,1.68,1.01.37,2.07.56,3.16.56Z"/><path class="lc" d="M501.2,49.52c-1.32,0-2.38-.41-3.2-1.22-.81-.81-1.22-1.86-1.22-3.13s.42-2.32,1.25-3.13,1.89-1.22,3.17-1.22c1.19,0,2.23.41,3.13,1.22.9.81,1.35,1.86,1.35,3.13s-.43,2.32-1.29,3.13c-.86.81-1.92,1.22-3.2,1.22ZM497.84,88.89v-34.75h6.79v34.75h-6.79Z"/><path class="lc" d="M66.27,72.25c1.87-4.73,1.81-9.65.19-13.57-1.29-3.15-3.58-5.63-6.68-6.86-6.96-2.76-15.35,1.9-18.73,10.41-1.22,3.06-1.62,6.2-1.32,9.11.56,5.15,3.35,9.53,7.8,11.31,6.97,2.76,15.35-1.9,18.74-10.4ZM52.84,73.31c-3.29-1.3-5.27-4.46-5.24-7.79.01-.99.2-2.01.59-2.98,1.68-4.25,6.51-6.33,10.76-4.65,1.1.44,2.04,1.08,2.83,1.86,2.25,2.27,3.07,5.74,1.82,8.9-1.69,4.26-6.51,6.35-10.76,4.66Z"/><path class="lc" d="M81.19,102.61h-.02c-10.48,0-19.09-5.11-20.09-11.64-.07.41-.09.82-.09,1.24,0,7.11,9.03,12.89,20.18,12.89h.02c11.15,0,20.18-5.78,20.18-12.89,0-.42-.02-.83-.09-1.24-1,6.53-9.61,11.64-20.09,11.64Z"/><ellipse class="lc" cx="81.18" cy="88.1" rx="11.18" ry="7.15"/><path class="lc" d="M102.58,51.82c-3.1,1.23-5.39,3.72-6.68,6.86-1.62,3.91-1.69,8.83.19,13.57,3.39,8.5,11.77,13.16,18.74,10.4,4.45-1.78,7.24-6.16,7.8-11.31.31-2.9-.1-6.05-1.32-9.11-3.37-8.51-11.77-13.17-18.73-10.41ZM109.52,73.31c-4.25,1.69-9.07-.39-10.76-4.66-1.25-3.16-.43-6.63,1.82-8.9.79-.78,1.73-1.42,2.83-1.86,4.25-1.69,9.08.39,10.76,4.65.39.98.58,1.99.59,2.98.03,3.33-1.95,6.49-5.24,7.79Z"/><path class="lc" d="M137.19,56.07c.29-3.13.34-6.41-.96-9.27-1.18-2.6-3.53-4.57-6.21-5.5-1.45-.5-2.8-.51-4.31-.56-1.87-.07-1.82-1.39-3.13-2.72-.83-.83-1.93-1.6-3.4-2.31-2.28-1.08-4.69-2.15-7.2-3.12-4.1-1.61-8.9-3.09-14.13-4.47-13.77-4.14-19.56-4.15-33.36,0-5.23,1.38-10.03,2.86-14.13,4.47-2.51.98-4.92,2.04-7.2,3.12-1.47.71-2.56,1.48-3.4,2.31-1.31,1.33-1.26,2.65-3.13,2.72-1.51.06-2.85.06-4.31.56-2.68.93-5.03,2.9-6.21,5.5-1.3,2.86-1.25,6.14-.96,9.27.41,4.46,1.33,8.65,2.4,12.98,1.01,4.1-.79,8.37-.79,12.48,0,2.79.36,5.63,1.23,8.42.85,2.72,2.18,5.27,3.85,7.58.87,1.22,1.84,2.48,2.84,3.61.37.41,1.01-.08.72-.54-2.72-4.54-4.33-9.73-4.61-15.01-.19-3.42-.37-6.54.25-9.99.68-3.68,1.82-7.25,2.99-10.81,1.69-5.12,3.41-10.22,5.17-15.32,1.15-3.3,1.88-8.55,4.99-10.65,6.29-4.3,15.96-3.85,21.49,1.4,2.3,2.19,3.91,5,5.86,7.51,1.96,2.52,4.46,4.84,7.57,5.45.69.14,1.38.19,2.05.15.67.03,1.36-.01,2.05-.15,3.11-.6,5.61-2.93,7.57-5.45,1.95-2.51,3.56-5.32,5.86-7.51,5.53-5.25,15.2-5.7,21.49-1.4,3.1,2.1,3.84,7.35,4.99,10.65,1.76,5.1,3.48,10.2,5.17,15.32,1.17,3.55,2.31,7.12,2.99,10.81.62,3.45.44,6.58.25,9.99-.28,5.28-1.9,10.48-4.61,15.01-.28.46.35.94.72.54,1-1.13,1.97-2.39,2.84-3.61,1.67-2.31,2.99-4.87,3.85-7.58.87-2.78,1.23-5.62,1.23-8.42,0-4.12-1.8-8.38-.79-12.48,1.07-4.33,1.99-8.52,2.4-12.98Z"/><circle class="lc" cx="58.54" cy="69.25" r="2.45"/><circle class="lc" cx="103.81" cy="69.25" r="2.45"/></svg></div>
+  <div class="nav-links">
+    <a href="#how">How It Works</a>
+    <a href="#use-cases">Use Cases</a>
+    <a href="#agents">Agents</a>
+    <a href="#who">Who It's For</a>
+    <a href="https://app.meerkats.ai/" class="btn btn-lime">Get Started</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="pill"><span class="pill-dot"></span> Autonomous GTM Agents</div>
+  <div class="wrap">
+    <h1>Build, deploy, and monetize <em>autonomous agents</em> for your GTM</h1>
+    <p class="hero-sub">Turn your GTM expertise into autonomous agents. Configure once, deploy per client, sell as a service.</p>
+    <div class="hero-actions">
+      <a href="https://app.meerkats.ai/" class="btn btn-lime-lg">Start Building Agents →</a>
+      <a href="#how" class="btn btn-ghost">See How It Works</a>
+    </div>
+    <div class="trust">
+      <span class="trust-label">Used by agencies and GTM operators</span>
+      <div class="trust-row">
+        <span class="trust-name">GROWLEXI</span>
+        <span class="trust-name">REESIO</span>
+        <span class="trust-name">EMP CLAIMS</span>
+        <span class="trust-name">SAVILLE CPA</span>
+        <span class="trust-name">HR LABS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE CONSOLE -->
+<section class="console-section sand-texture" id="console">
+  <div class="wrap">
+    <div class="console-header reveal">
+      <div class="label">Try It</div>
+      <h2>Build your GTM agent</h2>
+      <p>Click a prompt or describe your own. Log in to run it.</p>
+    </div>
+
+    <div class="console-box reveal-scale shimmer-hover">
+      <div class="console-input-wrap">
+        <textarea class="console-textarea" id="consoleInput" placeholder="Describe the GTM agent you want to build..." rows="3"></textarea>
+        <button class="console-send" id="consoleSend" title="Run agent">
+          <svg viewBox="0 0 16 16" fill="none"><path d="M2 8h12M10 4l4 4-4 4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="console-prompts">
+        <button class="prompt-btn" data-prompt="An agent that uses Tavily to research competitors and summarize strengths, weaknesses, trends, and recent developments with citations.">Tavily Competitor Research</button>
+        <button class="prompt-btn" data-prompt="An agent that uses Apify to scrape LinkedIn profiles based on defined ICP filters (job title, industry, company size, geography, keywords). It should extract structured data including name, role, company, seniority, past experience, skills, recent activity, and bio summary. The agent should analyze patterns across profiles to refine the ICP, identify common traits, and generate personalized outreach angles for each segment.">LinkedIn Profile Scraper (Apify)</button>
+        <button class="prompt-btn" data-prompt="An agent that uses Apollo and Hunter to identify high-fit leads based on our ICP, enrich company and contact data, and generate personalized outbound messaging. It should draft cold email sequences, LinkedIn outreach scripts, and follow-up flows tailored to the prospect's industry, role, and recent company activity.">Create Outbound Campaign</button>
+        <button class="prompt-btn" data-prompt="An agent that uses HubSpot to analyze active accounts, deals, pipeline stages, recent activity, engagement signals, deal size, close probability, and time-in-stage. It should identify which accounts or deals require attention today based on risk signals (stalled deals, no recent activity), expansion opportunities, high-probability near-close deals, and strategic account value. The agent should output a prioritized action list with reasoning and recommended next steps for each deal.">HubSpot Deal Intelligence</button>
+      </div>
+    </div>
+    <p class="console-hint">Agents connect to real tools — Tavily, Apify, Apollo, Hunter, HubSpot — and coordinate autonomously.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section sand-warm" id="skills">
+  <div class="wrap">
+    <div class="skills-header reveal">
+      <div class="label">Skills &amp; Agents</div>
+      <h2>Unleash your <em>"Skills.md"</em> and level-up your GTM</h2>
+      <p>Upload files, connect Github, execute code or just describe your task. Deploy as agents. Reuse and monetize.</p>
+    </div>
+
+    <!-- Skills.md Panel -->
+    <div class="skills-md reveal-scale glass-lift">
+      <div class="skills-md-bar">
+        <span class="frame-dot d-r"></span>
+        <span class="frame-dot d-y"></span>
+        <span class="frame-dot d-g"></span>
+        <span class="skills-md-name">skills.md</span>
+      </div>
+      <div class="skills-md-body">
+        <div class="md-title">GTM Outbound Skill</div>
+        <h4>Skills</h4>
+        <ul class="md-list">
+          <li>source_leads</li>
+          <li>enrich_data</li>
+          <li>generate_message</li>
+          <li>evaluate_reply</li>
+        </ul>
+        <h4>Tools</h4>
+        <ul class="md-list tools">
+          <li>Apollo</li>
+          <li>Hunter</li>
+          <li>LinkedIn API</li>
+          <li>Email API</li>
+          <li>CRM</li>
+        </ul>
+        <h4>Rules</h4>
+        <div class="md-rule">
+          Only target ICP matches<br>
+          Score before outreach<br>
+          Handoff to optimizer after 50 sends
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow: Skills → Agents -->
+    <div class="skills-arrow">↓</div>
+
+    <!-- Layer 1: Multiple Agents Spawned -->
+    <div class="spawn-layer reveal">
+      <div class="spawn-label">One Skill → Multiple Agents</div>
+      <div class="spawn-grid">
+        <div class="spawn-card">
+          <div class="spawn-icon">🅰</div>
+          <h4>Agent A</h4>
+          <p>Campaign 1</p>
+        </div>
+        <div class="spawn-card">
+          <div class="spawn-icon">🅱</div>
+          <h4>Agent B</h4>
+          <p>Campaign 2</p>
+        </div>
+        <div class="spawn-card">
+          <div class="spawn-icon">🅲</div>
+          <h4>Agent C</h4>
+          <p>Client 3</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow: Spawn → Coordination -->
+    <div class="skills-arrow">↓</div>
+
+    <!-- Layer 2: Agent-to-Agent Coordination -->
+    <div class="coord-layer reveal">
+      <div class="coord-label">Agent-to-Agent Coordination</div>
+      <div class="coord-flow">
+        <div class="coord-node"><h4>Sourcing Agent</h4></div>
+        <div class="coord-arrow live"><span>→</span><span>handoff</span></div>
+        <div class="coord-node"><h4>Enrichment Agent</h4></div>
+        <div class="coord-arrow live"><span>→</span><span>context passed</span></div>
+        <div class="coord-node"><h4>Messaging Agent</h4></div>
+        <div class="coord-arrow live"><span>→</span><span>priority score</span></div>
+        <div class="coord-node"><h4>Optimization Agent</h4></div>
+      </div>
+    </div>
+
+    <!-- Content Blocks -->
+    <div class="skills-blocks stagger">
+      <div class="sk-block reveal glass-lift">
+        <div class="sk-num">01</div>
+        <h3>Define Capabilities</h3>
+        <p>Specify what the agent does, what data it expects, and what it outputs. Predictable and reusable across clients.</p>
+      </div>
+      <div class="sk-block reveal glass-lift">
+        <div class="sk-num">02</div>
+        <h3>Attach Tools to Skills</h3>
+        <p>Tools bind directly to skills — sourcing runs Apollo, enrichment calls Hunter, outreach uses Email API. The right tool fires automatically.</p>
+      </div>
+      <div class="sk-block reveal glass-lift">
+        <div class="sk-num">03</div>
+        <h3>Enable Agent Handoffs</h3>
+        <p>Agents pass structured outputs, trigger each other, and escalate decisions. Independent execution, shared memory.</p>
+      </div>
+      <div class="sk-block reveal glass-lift">
+        <div class="sk-num">04</div>
+        <h3>Reuse Across Clients</h3>
+        <p>One Skills.md powers multiple campaigns, clients, and geographies. Define once. Deploy many times.</p>
+      </div>
+    </div>
+
+    <!-- Progression -->
+    <div class="skills-progression reveal">
+      <div class="prog-step"><div class="prog-dot"></div><span>Skills.md</span></div>
+      <div class="prog-line"></div>
+      <div class="prog-step"><div class="prog-dot"></div><span>Specialized Agents</span></div>
+      <div class="prog-line"></div>
+      <div class="prog-step"><div class="prog-dot"></div><span>Agent Coordination</span></div>
+      <div class="prog-line"></div>
+      <div class="prog-step"><div class="prog-dot"></div><span>Live GTM Execution</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="use-cases" id="use-cases">
+  <div class="wrap">
+    <div class="use-cases-header reveal">
+      <div class="label">Use Cases</div>
+      <h2>Deploy agents across your entire GTM stack</h2>
+      <p>Pre-built templates you can configure and run in minutes.</p>
+    </div>
+
+    <div class="uc-grid stagger">
+      <div class="uc-card reveal shimmer-hover">
+        <h3>Build Local Business Lists from Google Maps</h3>
+        <p>Scrape Google Maps by keyword, category, and location. Extract business details, ratings, and reviews — structured and ready for outreach.</p>
+        <a href="uc-google-maps.html" class="uc-explore">Explore →</a>
+      </div>
+      <div class="uc-card reveal shimmer-hover">
+        <h3>Keyword-Based Social Scraping to Notion</h3>
+        <p>Monitor platforms for keyword-matching posts. Extract content, engagement, and trends — auto-synced to Notion for ongoing intelligence.</p>
+        <a href="uc-social-scraping.html" class="uc-explore">Explore →</a>
+      </div>
+      <div class="uc-card reveal shimmer-hover">
+        <h3>Automated Lead Enrichment</h3>
+        <p>Take raw leads and enrich with verified emails, LinkedIn data, company intel, and intent signals. Output ready for targeting.</p>
+        <a href="uc-lead-enrichment.html" class="uc-explore">Explore →</a>
+      </div>
+      <div class="uc-card reveal shimmer-hover">
+        <h3>Multi-Channel Outreach Agents</h3>
+        <p>Coordinated agents for sourcing, enrichment, messaging, and follow-ups across email and LinkedIn. Continuous campaigns with built-in optimization.</p>
+        <a href="uc-multi-channel-outreach.html" class="uc-explore">Explore →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem sand-texture">
+  <div class="wrap">
+    <div class="label reveal">The Problem</div>
+    <h2 class="reveal">GTM is a dozen roles that never stop</h2>
+    <div class="problem-copy reveal">
+      <p>Lead scoring, content, campaigns, reporting — all happening across every client, every week. Most teams duct-tape it with disconnected tools and manual effort.</p>
+    </div>
+    <div class="pain-grid stagger">
+      <div class="pain reveal glass-lift">
+        <div class="pain-icon">🔄</div>
+        <h3>Your best plays stay stuck in your head</h3>
+        <p>Your best strategies live in docs nobody reads or in your own intuition. They can't run on their own.</p>
+      </div>
+      <div class="pain reveal glass-lift">
+        <div class="pain-icon">🧩</div>
+        <h3>Every client is a rebuild</h3>
+        <p>Same enrichment, same campaigns, same reporting — rebuilt from scratch for every new account.</p>
+      </div>
+      <div class="pain reveal glass-lift">
+        <div class="pain-icon">📉</div>
+        <h3>Growth and margins pull apart</h3>
+        <p>More clients means more execution, more people, less margin. Revenue grows, profit doesn't.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION BRIDGE -->
+<section class="bridge">
+  <div class="wrap reveal">
+    <div class="label">Meerkats AI</div>
+    <h2>Autonomous agents for every GTM role</h2>
+    <p>Define your GTM expertise as agents. Deploy them across clients and campaigns. Build once — the agent handles the role from there.</p>
+  </div>
+</section>
+
+<!-- VALUE PROPS -->
+<section class="vps" id="agents">
+  <div class="wrap">
+
+    <!-- VP1: BUILD -->
+    <div class="vp">
+      <div class="vp-copy reveal-left">
+        <div class="label">Build</div>
+        <h3>Turn any GTM play into a deployable agent</h3>
+        <p>Define what an agent should do in a simple skills file. That definition becomes a reusable, versioned agent you can deploy, hand to a client, or sell as a service.</p>
+      </div>
+      <div class="vp-vis reveal-right glass-lift">
+        <div class="vis-row">
+          <div class="vis-icon">📝</div>
+          <span class="vis-label">lead-scorer.skills.md</span>
+          <span class="vis-meta">ICP, scoring rules, thresholds</span>
+        </div>
+        <div class="vis-arrow">↓ becomes</div>
+        <div class="vis-row">
+          <div class="vis-icon">🤖</div>
+          <span class="vis-label">Lead Scorer Agent</span>
+          <span class="vis-meta">v2.4 · Configurable</span>
+        </div>
+        <div class="vis-arrow">↓ configure</div>
+        <div class="vis-row">
+          <div class="vis-icon">⚙️</div>
+          <span class="vis-label">Client: Acme · ICP: Series B SaaS</span>
+          <span class="vis-meta" style="color:#1a8a3a">Ready</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- VP2: DEPLOY -->
+    <div class="vp">
+      <div class="vp-copy reveal-right">
+        <div class="label">Deploy</div>
+        <h3>Agents run on schedule and hand off to each other</h3>
+        <p>Set schedules, triggers, and coordination rules. Agents run in sequence — scoring, writing, launching, reporting — each triggering the next. You review results, not task lists.</p>
+      </div>
+      <div class="vp-vis reveal-left glass-lift">
+        <div class="vis-row live">
+          <div class="vis-icon">🔍</div>
+          <span class="vis-label">Lead Scorer</span>
+          <span class="vis-meta">6:00 AM · 214 scored</span>
+        </div>
+        <div class="vis-arrow">→ triggers</div>
+        <div class="vis-row">
+          <div class="vis-icon">✍️</div>
+          <span class="vis-label">Content Writer</span>
+          <span class="vis-meta">7:00 AM · 87 personalized</span>
+        </div>
+        <div class="vis-arrow">→ triggers</div>
+        <div class="vis-row">
+          <div class="vis-icon">🚀</div>
+          <span class="vis-label">Campaign Runner</span>
+          <span class="vis-meta">8:00 AM · 3 channels</span>
+        </div>
+        <div class="vis-arrow">→ triggers</div>
+        <div class="vis-row">
+          <div class="vis-icon">📊</div>
+          <span class="vis-label">Report Builder</span>
+          <span class="vis-meta" style="color:#1a8a3a">Friday 8 AM</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- VP3: MONETIZE -->
+    <div class="vp">
+      <div class="vp-copy reveal-left">
+        <div class="label">Monetize</div>
+        <h3>Clone agents across clients and sell them as a service</h3>
+        <p>Clone any agent for a new client, reconfigure the ICP, deploy in minutes. Package agents as a managed service or bundle into your product. Built once — earns across every account.</p>
+      </div>
+      <div class="vp-vis reveal-right glass-lift">
+        <div class="vis-row">
+          <div class="vis-icon">📋</div>
+          <span class="vis-label">Lead Scorer Agent (base)</span>
+          <span class="vis-meta">v2.4 · Source</span>
+        </div>
+        <div class="vis-arrow">↓ clone + reconfigure</div>
+        <div class="vis-row">
+          <div class="vis-icon">🏢</div>
+          <span class="vis-label">→ Acme (Series B SaaS)</span>
+          <span class="vis-meta" style="color:#1a8a3a">Live</span>
+        </div>
+        <div class="vis-row">
+          <div class="vis-icon">🏢</div>
+          <span class="vis-label">→ Beacon (E-commerce)</span>
+          <span class="vis-meta" style="color:#1a8a3a">Live</span>
+        </div>
+        <div class="vis-row">
+          <div class="vis-icon">🏢</div>
+          <span class="vis-label">→ Relay (FinTech)</span>
+          <span class="vis-meta" style="color:#a08200">Configuring</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PERSONAS -->
+<section class="personas sand-texture" id="who">
+  <div class="wrap">
+    <div class="personas-head reveal">
+      <div class="label">Who It's For</div>
+      <h2>Built for people who <em>do</em> GTM</h2>
+      <p>Run GTM for clients, your own product, or as a freelance operator — same leverage: build once, deploy everywhere.</p>
+    </div>
+    <div class="p-grid stagger">
+      <div class="p-card reveal glass-lift">
+        <div class="p-tag">Agencies</div>
+        <h3>Ship agents to clients instead of hours</h3>
+        <p>Build agents, clone per client, offer managed GTM as a productized service with real margins.</p>
+      </div>
+      <div class="p-card reveal glass-lift">
+        <div class="p-tag">SaaS Founders</div>
+        <h3>Run full-funnel GTM from day one</h3>
+        <p>Score leads, launch campaigns, run experiments, pull reports — all running before your first hire.</p>
+      </div>
+      <div class="p-card reveal glass-lift">
+        <div class="p-tag">Freelancers & Builders</div>
+        <h3>Sell agents, not hours</h3>
+        <p>Package your GTM plays into agents that run continuously. Charge for output, not hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="label reveal">How It Works</div>
+    <h2 class="reveal">From expertise to running agents in five steps</h2>
+    <div class="steps stagger">
+      <div class="step reveal">
+        <div class="step-n">01</div>
+        <h3>Define your skills</h3>
+        <p>Write what each agent should do — scoring criteria, campaign rules, report templates.</p>
+        <span class="step-arr">→</span>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">02</div>
+        <h3>Create agents</h3>
+        <p>Each skill becomes an autonomous agent with configurable parameters.</p>
+        <span class="step-arr">→</span>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">03</div>
+        <h3>Configure per client</h3>
+        <p>Set the ICP, channels, schedule, and coordination rules for each client or campaign.</p>
+        <span class="step-arr">→</span>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">04</div>
+        <h3>Deploy</h3>
+        <p>Agents go live, run on schedule, trigger each other, and log everything they do.</p>
+        <span class="step-arr">→</span>
+      </div>
+      <div class="step reveal">
+        <div class="step-n">05</div>
+        <h3>Clone and scale</h3>
+        <p>Duplicate working agents for new clients. Reconfigure and deploy again in minutes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-end" id="start">
+  <div class="wrap reveal">
+    <div class="label">Get Started</div>
+    <h2>Your GTM expertise is worth more as agents</h2>
+    <p>Build your first agent and see what GTM looks like when it runs on its own.</p>
+    <a href="https://app.meerkats.ai/" class="btn btn-lime-lg">Start Building Agents →</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq sand-warm" id="faq">
+  <div class="wrap">
+    <div class="faq-header reveal">
+      <div class="label">FAQ</div>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-q">Do I need to write code to create agents?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>No. You define agent capabilities in a Skills.md file using plain language — what skills to run, which tools to use, and what rules to follow. No programming required. If you can describe your GTM playbook, you can build an agent.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">How does Meerkats handle large-scale runs and data security?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Meerkats integrates natively with Supabase, giving you a production-grade Postgres backend out of the box. Large agent runs — thousands of leads, multi-step enrichment, bulk outreach — are handled reliably at scale. Row-Level Security (RLS) is built in, so each client's data is fully isolated and protected by default.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What tools and integrations are supported?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Apollo, Hunter, Apify, Tavily, HubSpot, LinkedIn API, Notion, email infrastructure, CRM systems, and more. You can also connect any API as a custom tool and bind it to a skill.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Can I run the same agent for multiple clients?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes — that's the core model. Define a skill once, then clone and configure it per client with different ICPs, schedules, and targeting rules. Each deployment runs independently with its own data and context.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">How do agents coordinate with each other?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Agents pass structured outputs, trigger downstream agents, and share context automatically. A sourcing agent can hand off to enrichment, which triggers messaging, which feeds analytics — all without manual intervention.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Who is Meerkats built for?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>GTM agencies, SaaS founders running their own pipeline, freelance operators, and revenue teams who want to productize their playbooks. If you're doing GTM work manually and want to scale it — Meerkats is for you.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer><p>© 2025 Meerkats AI. All rights reserved. · <a href="terms.html" style="color:var(--text-3);text-decoration:none;border-bottom:1px solid rgba(138,138,150,0.3)">Terms</a> · <a href="privacy.html" style="color:var(--text-3);text-decoration:none;border-bottom:1px solid rgba(138,138,150,0.3)">Privacy</a></p></footer>
+
+<script>
+(function() {
+  const textarea = document.getElementById('consoleInput');
+  const sendBtn = document.getElementById('consoleSend');
+  const promptBtns = document.querySelectorAll('.prompt-btn');
+
+  promptBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active from all
+      promptBtns.forEach(b => b.classList.remove('active'));
+      // Set active
+      btn.classList.add('active');
+      // Populate textarea
+      textarea.value = btn.dataset.prompt;
+      // Auto-resize
+      textarea.style.height = 'auto';
+      textarea.style.height = textarea.scrollHeight + 'px';
+      // Focus
+      textarea.focus();
+    });
+  });
+
+  sendBtn.addEventListener('click', () => {
+    if (textarea.value.trim()) {
+      // In production: redirect to login or execute
+      window.location.href = '/login?prompt=' + encodeURIComponent(textarea.value.trim());
+    }
+  });
+
+  // Allow enter to submit (shift+enter for newline)
+  textarea.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendBtn.click();
+    }
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // Scroll-reveal observer
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('vis');
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => revealObs.observe(el));
+
+  // Parallax subtle float for ambient orb
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const s = window.scrollY;
+        const sienna = document.querySelector('.ambient-sienna');
+        if (sienna) sienna.style.transform = 'translateY(' + (s * 0.04) + 'px)';
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
